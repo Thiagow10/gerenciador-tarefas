@@ -2,8 +2,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Projeto de estudo: em produção, nunca deixe a chave aqui no código!
-SECRET_KEY = "chave-de-estudo-troque-em-producao"
+SECRET_KEY = "study-key"
 DEBUG = True
 ALLOWED_HOSTS = []
 
@@ -45,7 +44,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "config.wsgi.application"
 
-# Banco de dados SQLite (usa SQL por baixo dos panos)
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",

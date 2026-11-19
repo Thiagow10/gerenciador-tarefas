@@ -8,7 +8,6 @@ from .models import Tarefa
 def lista_tarefas(request):
     tarefas = Tarefa.objects.all()
 
-    # Exemplo de SQL "puro" dentro do Django: conta o total e as concluídas
     with connection.cursor() as cursor:
         cursor.execute(
             """
